@@ -1,0 +1,88 @@
+## 📅 Day 5 — 14 Mei 2025  
+### 🧭 Fokus: Membuat Section "Tentang Kami" — Kenalin Diri dengan Cara yang Gak Ngebosenin
+
+---
+
+### 🎯 Tujuan Hari Ini
+Hari ini aku ngerjain section *About Us* alias "Tentang Kami". Bagian ini sering disepelekan, padahal penting banget buat bangun *trust*. Jadi, aku pengen bikin ini bukan sekadar paragraf panjang yang di-skip user, tapi visual, ringkas, dan bisa kasih nilai lebih kenapa pengunjung harus peduli sama brand kita.
+
+---
+
+### 🔧 Apa yang Aku Kerjain?
+
+#### ✅ 1. Susun Struktur HTML Section Tentang Kami
+Aku buat satu section baru dengan class `.about`, berisi:
+- Heading utama
+- Deskripsi singkat misi dan nilai
+- 3 card kecil yang menampilkan poin-poin penting seperti “Fokus”, “Skill”, dan “Pengalaman”
+
+```html
+<section class="about" id="about">
+  <h2>Tentang Kami</h2>
+  <p>Kami adalah tim kreatif yang fokus membangun landing page modern, ringan, dan konversi-ready.</p>
+  
+  <div class="about-cards">
+    <div class="card">
+      <h3>🎯 Fokus</h3>
+      <p>Kami fokus pada performa, desain bersih, dan pengalaman pengguna yang menyenangkan.</p>
+    </div>
+    <div class="card">
+      <h3>💡 Skill</h3>
+      <p>HTML, CSS, JavaScript, dan integrasi tools marketing modern adalah andalan kami.</p>
+    </div>
+    <div class="card">
+      <h3>📈 Pengalaman</h3>
+      <p>Lebih dari 20+ landing page berhasil kami deploy untuk berbagai bisnis lokal & digital.</p>
+    </div>
+  </div>
+</section>
+
+.about {
+  padding: 60px 20px;
+  background-color: #f7f9fc;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.about-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #444;
+}
